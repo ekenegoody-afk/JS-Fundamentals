@@ -1,12 +1,12 @@
-let arg = process.argv[2];
-let num = Number(arg);
+const arg = process.argv[2];
+const num = Number(arg);
 
-if (!isNaN(num)){
-    while (num!=0) {
-    console.log("C is fun");
-    num--;
-}
-
-}else{
-    console.log("Missing number of occurences");
+if (!isNaN(num) && num > 0) { 
+    let count = num;
+    while (count > 0) {
+        console.log("C is fun");
+        count--;
+    }
+} else {
+    console.log("Not a number");
 }
